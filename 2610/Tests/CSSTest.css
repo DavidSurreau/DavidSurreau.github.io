@@ -1,0 +1,9 @@
+body {width: 3000px;}
+img {float: left;
+    width: 901px;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}

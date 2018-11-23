@@ -1,0 +1,25 @@
+body {
+  font-family: Courier;
+}
+
+iframe {
+  border: none;
+}
+
+.card {
+  padding: 0%;
+}
+
+.paddingimg {
+  padding: 2%;
+}
+
+.paddingimgtop {
+  margin-top: 5%;
+}
+
+.marginimgleft {
+  margin-left: 10%;
+}
+
+/*# sourceMappingURL=css.css.map */

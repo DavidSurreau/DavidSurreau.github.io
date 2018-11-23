@@ -1,0 +1,337 @@
+.body {
+  margin: 0%;
+}
+
+
+/* Description de la première section regroupant la partie share, le header et la barre de défirement */
+
+.section100 {background-color: rgb(224, 255, 255);
+  padding-left: 20%;
+  padding-right: 20%;
+  clear: both;
+  overflow: hidden;
+  border-top: solid 0.5px black;;
+}
+
+.sharediv__img {width: 2%;}
+
+.header {background-color: rgba(131, 112, 255, 0.678); border-top: solid 0.5px black;}
+
+/* Css de menu dans le header */
+.header {overflow: hidden; padding-left: 20%; padding-right: 20%;}
+.header__h1 {display:none;}
+.header__logo {float: left;}
+.headernav__ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+.headernav {float: left;
+  margin-top: 4%;
+}
+.headernav__ul li {padding-left: 0%;
+  margin-left: 8%;
+  font-weight: bold;  
+}
+/* Spécificité dropdown */
+
+.headernav__ul li ul{
+  display: none;
+  /* visibility: hidden; peut-être à réutiliser pour la flèche du menu */ 
+}
+
+.headernav__ul li:hover > ul,
+ .headernav__ul li ul:hover
+{
+  display: inline-block;
+  width: 100%;
+  /* visibility: visible; peut-être à réutiliser pour la flèche du menu */
+  padding-left: 0%;
+  list-style-type: none;
+}
+.dropdown__button {
+  width: 100%;
+  background-color: aquamarine;
+  border: none;
+
+}
+
+.headernav__a_color {color: black;
+  text-decoration : none;
+}
+.headernav__a_color :active {color: black;
+  text-decoration : none;
+}
+.headernav__a_color :hover {color: black;
+  text-decoration : none;
+}
+.headernav__a_color :visited {color: black;
+  text-decoration : none;
+}
+
+.dropdown__li {background-color: rgba(128, 128, 128, 0.418);
+  width: 100%;
+  border-radius: 0px;
+  margin: 3%;
+}
+
+.headernav__ul li:hover > .headernav__logo_inactive 
+{
+  visibility: visible;
+  padding-left: 1%;
+}
+
+.headernav__logo_inactive 
+{
+  visibility: hidden;
+}
+
+.dropdown__li a {display: block;
+  text-align: left;
+  padding-left: 15%;
+  color: black;
+  text-decoration: none;
+}
+
+.headernav__ul li:hover > .dropdown__a,
+ .dropdown__a:hover
+ {
+  color: red;
+  background-color: white;
+}
+
+/* Photos qui défilent */
+
+.photosdefile__img {width: 100%;}
+
+/* Deuxième grande section = section100-2 */
+
+.section100-2 {
+padding-left: 20%;
+padding-right: 20%;
+border-top: solid 0.5px black;
+}
+
+.blocblog {
+  float: left;
+  width: 31%;
+  margin: 1%;
+}
+
+.blocimg {background-color: rgba(131, 112, 255, 0.678);
+   padding: 1%;
+   overflow: hidden;
+  }
+.blocimg__img {
+  float: left;
+  width: 30%;
+  height: 100px;
+}
+
+.blocimg__p {color: white;
+  float: left;
+  width: 70%;
+}
+
+.blocp__link :hover {color: red;}
+.blocp__link :active {color: red;}
+.blocp__link {color: red;}
+
+/* Bloc destination */
+
+.soussection100 {width: 100%;}
+.destination_active {
+  float: left;
+  padding-left: 3%;
+  width: 30%;
+}
+.destination_inactive {
+  float: left;
+  padding-left: 3%;
+  width: 30%;
+}
+
+
+.destination__img { width: 90%;
+  padding: 1%;
+  border: solid 1px black;
+}
+
+
+.destination__p {font-weight: bold;}
+
+/* Partie blog divdescription */
+
+.soussection100-2 {
+  display: flex;
+  overflow: hidden;
+  align-content: space-between;
+  flex-direction: row;
+} 
+
+.divdescription {float: left; overflow: hidden; width: 100%; padding-left: 2%;}
+
+.divdescription100 {float: left; overflow: hidden; width: 100%; margin-bottom: 4%;}
+
+.divdescription100__button {background-color: rgb(45, 122, 45);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.blocwhyus {clear: both;}
+
+.blocwhyus__img {float: left; width: 30%;}
+
+.blocwhyus__p {float: left; width:  70%;}
+
+/* Description du footer */
+
+.footer {background-color: rgba(131, 112, 255, 0.678);
+  overflow: hidden;
+  padding-left: 20%;
+  padding-right: 20%;
+  border-top: solid 0.5px black;
+}
+
+.footternav {float: left;
+  margin-top: 0%;
+}
+
+.footternav__ul {
+  display: inline-flex;
+  list-style-type: none;
+  padding-left: 0%;
+}
+
+.footternav__ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.footternav__ul li {padding-left: 0%;
+  margin-right: 8%;
+  font-weight: bold;
+  
+}
+
+.footer__p {clear: both;
+  color: rgba(59, 59, 59, 0.39);
+  font-weight: bold;
+}
+
+
+
+/* Travail sur le responsive */
+
+/* Travail sur le responsive @media screen and (max-width: 1280px)
+ */
+
+ @media screen and (max-width: 1080px)
+
+{
+ .section100 {
+  padding-left: 5%;
+  padding-right: 5%;
+ }
+ .section100-2 {
+  padding-left: 5%;
+  padding-right: 5%;
+ }
+ .footer {
+  padding-left: 5%;
+  padding-right: 5%;
+ }
+}
+
+@media screen and (max-width: 800px)
+
+{
+  .header {flex-direction: column;
+    padding-left: 15%;
+    padding-right: 20%;
+   }
+  .header__logo {padding-left: 15%;}
+  .headernav {width: 100%; padding: 0%;}
+  .section100 {flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .destination_active {width: 100%;}
+  .destination_inactive {display: none;}
+  .destination__img {width: 100%;}
+  .section100-2 {flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .soussection100-2 {flex-direction: column;
+  }
+  .soussection100 {flex-direction: column;}
+  .blocblog {width: 100%;}
+  .divdescription {width: 100%;}
+  .footer {
+    padding-left: 20%;
+    padding-right: 20%;}
+
+.headernav__ul li {
+  display: inline-block; 
+  margin-left: 0%;
+  margin-right: 15%;
+  border-top: solid rgb(216, 216, 216) 1px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.dropdown .dropdown__li {margin: 0%;
+  border: none;
+}
+
+/*  Test menu responsive
+.headernav__ul li:hover > ul,
+ .headernav__ul li ul:hover
+{display: none;}
+*/
+
+.headernav__ul {
+  flex-direction: column;
+  list-style-type: none;
+  width: 100%;
+  margin-left: 0%;
+}
+
+
+
+.headernav {
+  flex-direction: column;
+  margin-top: 4%;
+}
+}
+
+@media screen and (max-width: 500px)
+
+{
+  .header {flex-direction: column;}
+  .headernav {width: 100%; padding: 0%;}
+  .section100 {flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .destination_active {width: 100%;}
+  .destination_inactive {display: none;}
+  .destination__img {width: 90%;}
+  .section100-2 {flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .soussection100-2 {flex-direction: column;
+  }
+  .soussection100 {flex-direction: column;}
+  .blocblog {width: 100%;}
+  .divdescription {width: 100%;}
+  .footer {
+    padding-left: 2%;
+    padding-right: 2%;}
+}
+.header {flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+   }
